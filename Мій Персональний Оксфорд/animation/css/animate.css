@@ -1,0 +1,193 @@
+
+.animation {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animation.delay-1s {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.animation.delay-2s {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.animation.delay-3s {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+.animation.delay-4s {
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+}
+
+.animation.delay-5s {
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+
+
+@media (print), (prefers-reduced-motion: reduce) {
+  .animation {
+    -webkit-animation-duration: 1ms !important;
+    animation-duration: 1ms !important;
+    -webkit-transition-duration: 1ms !important;
+    transition-duration: 1ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.sun{
+  -webkit-animation-name: sun;
+  animation-name: sun;
+}
+
+.cloud{
+  -webkit-animation-name: cloud;
+  animation-name: cloud;
+}
+.tree{
+  -webkit-animation-name: tree;
+  animation-name: tree;
+}
+@keyframes sun {
+  from {
+    opacity: 0;
+    left: 0px;
+  }
+
+  to {
+    opacity: 1;
+    left: 30px;
+  }
+}
+@keyframes cloud {
+  from {
+    opacity: 0;
+    right: 0px;
+  }
+
+  to {
+    opacity: 1;
+    right: 30px;
+  }
+}
+
+@keyframes tree {
+  from {
+    opacity: 0;
+    bottom: 0px;
+  }
+
+  to {
+    opacity: 1;
+    bottom: 70px;
+  }
+}
+
+
+.anm{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background: transparent;
+  background: url(../img/back_books.png) center top / 90% no-repeat;
+}
+
+.anm img{
+  background: lightblue;
+  background: transparent;
+  display: block;
+}
+
+.img1{
+  width: 70%;
+}
+.img2{
+  width: 65%;
+}
+.img3{
+  width: 63%;
+}
+.img4{
+  width: 50%;
+  margin-left: 30px;
+}
+.img5{
+  width: 55%;
+  margin-right: 25px;
+}
+.img6{
+  width: 62%;
+  animation-delay: 6s;
+}
+.img7{
+  position: absolute;
+  animation-delay: 7s;
+  z-index: 1;
+  width: 80%;
+  height: 137%;
+  margin-top: -40px;
+  margin-left: 100px;
+}
+
+.img8{
+  position: absolute;
+  width: 15%;
+  height: 19%;
+  z-index: 0;
+  top: 10px;
+}
+
+.img9{
+  position: absolute;
+  width: 20%;
+  height: 11%;
+  z-index: 0;
+  top: 40px;
+}
+
+.img10{
+  position: absolute;
+  width: 23%;
+  height: 23%;
+  z-index: 0;
+  left: 2px;
+}
